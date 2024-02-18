@@ -12,6 +12,7 @@ const config: Config = {
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1",
   },
+  modulePathIgnorePatterns: ["<rootDir>/tests/"],
   coverageProvider: "v8",
   testEnvironment: "jsdom",
   // Add more setup options before each test is run
