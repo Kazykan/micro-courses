@@ -56,7 +56,7 @@ export function CreateCourseForm({
             <FormItem>
               <FormLabel>Название</FormLabel>
               <FormControl>
-                <Input placeholder="называние..." {...field} />
+                <Input placeholder="название..." {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
