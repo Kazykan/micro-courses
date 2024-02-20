@@ -69,7 +69,7 @@ export function CreateCourseForm({
             <FormItem>
               <FormLabel>Описание</FormLabel>
               <FormControl>
-                <Textarea placeholder="описание..." {...field} />
+                <Textarea placeholder="Описание..." {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
