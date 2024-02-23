@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/shared/ui/utils";
+import { ThemeProvider } from "@/features/theme/theme-provider";
+import { AppProvider } from "./_providers/app-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,14 +21,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
         )}
       >
-        {children}
+        <AppProvider>{children}</AppProvider>
       </body>
     </html>
   );
